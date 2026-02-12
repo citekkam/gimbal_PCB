@@ -13335,7 +13335,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10p"
+		(property "Value" "8p"
 			(at 67.564 77.47 0)
 			(effects
 				(font
@@ -14016,7 +14016,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_0805_2012Metric"
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
 			(at 33.02 121.92 0)
 			(effects
 				(font
@@ -15575,7 +15575,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10p"
+		(property "Value" "8p"
 			(at 85.344 77.47 0)
 			(effects
 				(font
