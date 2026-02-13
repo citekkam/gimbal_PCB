@@ -7505,12 +7505,6 @@
 		(uuid "63cd753f-dec6-48a8-ae79-8749c984a6ed")
 	)
 	(junction
-		(at 102.87 165.1)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "65d047db-e172-4fcd-9b49-733be8066ce7")
-	)
-	(junction
 		(at 96.52 168.91)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -7689,6 +7683,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c792644e-d688-4f32-adf1-e4addab3e919")
+	)
+	(junction
+		(at 102.87 165.1)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d42199f2-7fb8-434a-99f7-6f757ab7e996")
 	)
 	(junction
 		(at 100.33 88.9)
@@ -7970,6 +7970,26 @@
 	)
 	(wire
 		(pts
+			(xy 111.76 165.1) (xy 114.3 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "05658067-3b36-491e-a9cb-62aa3d817d57")
+	)
+	(wire
+		(pts
+			(xy 102.87 165.1) (xy 102.87 168.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "059b0f29-fd0e-4ac9-aaef-1860201c6088")
+	)
+	(wire
+		(pts
 			(xy 182.88 113.03) (xy 184.15 113.03)
 		)
 		(stroke
@@ -8027,6 +8047,16 @@
 			(type default)
 		)
 		(uuid "08c3fa19-e9e9-4e3c-b799-423bb831f945")
+	)
+	(wire
+		(pts
+			(xy 102.87 165.1) (xy 106.68 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "090642ca-9f3e-4d99-9235-97d414a97502")
 	)
 	(wire
 		(pts
@@ -9670,16 +9700,6 @@
 	)
 	(wire
 		(pts
-			(xy 102.87 165.1) (xy 102.87 168.91)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "abeba51a-1443-4b65-bda0-818a652cb13d")
-	)
-	(wire
-		(pts
 			(xy 158.75 36.83) (xy 158.75 38.1)
 		)
 		(stroke
@@ -10457,16 +10477,6 @@
 			(type default)
 		)
 		(uuid "f65ebd98-3e1d-4bd1-9b33-4f87e8530497")
-	)
-	(wire
-		(pts
-			(xy 114.3 165.1) (xy 102.87 165.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f7941cdc-3012-45f1-a57d-b39961b0e996")
 	)
 	(wire
 		(pts
@@ -14784,6 +14794,74 @@
 			(project "gimbal_PCB"
 				(path "/a27908c3-450c-4477-bcde-3e53ed050e28"
 					(reference "#PWR021")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 109.22 165.1 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6e10e775-bf2d-45bf-98a7-380d03dea6ad")
+		(property "Reference" "R16"
+			(at 109.22 160.02 90)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Value" "200m"
+			(at 109.22 162.56 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
+			(at 109.22 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 109.22 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 109.22 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "c64db2df-c974-45a2-b840-581636e0c97e")
+		)
+		(pin "1"
+			(uuid "b4f87e9e-4d9e-47b2-bc08-56576103fe11")
+		)
+		(instances
+			(project ""
+				(path "/a27908c3-450c-4477-bcde-3e53ed050e28"
+					(reference "R16")
 					(unit 1)
 				)
 			)
@@ -19267,7 +19345,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+		(property "Footprint" "Capacitor_THT:C_Radial_D8.0mm_H11.5mm_P3.50mm"
 			(at 114.3 168.91 0)
 			(effects
 				(font
